@@ -3,6 +3,9 @@
   margin: 0;
   outline: none;
 }
+body {
+  overflow-x: hidden;
+}
 body.stop-scrolling {
   overflow-y: hidden;
 }
