@@ -515,7 +515,7 @@ background-color: rgba(0, 205, 120, .1);
   align-content: center;
   background-color: rgba(0, 205, 120, 1);
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
   transition: all .5s;
   cursor: default;
 }
@@ -766,17 +766,17 @@ transition: all .2s;
     font-size: 20px;
   }
 .navbar.navbar-slide {
-  left: 55vw;
-  width: 45vw;
+  left: 50vw;
+  width: 50vw;
 }
 .body4-row2-row1 > div img {
-  width: 300px;
+  width: 320px;
 }
 .body4-row2-row2 > div:nth-child(2) {
 text-align: center;
 }
 .body4-row2-row2 > div img {
-  width: 300px;
+  width: 320px;
 }
 }
 @media (max-width: 500px) {
