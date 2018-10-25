@@ -440,8 +440,6 @@ width: 100vw;
   align-items: center;
 }
 .body4-row2 > div h3 {
-  font-size: 30px;
-  color: rgba(0, 205, 120, .8);
   font-family: 'Work Sans', sans-serif;
 }
 .body4-row2 > div p {
@@ -449,7 +447,7 @@ width: 100vw;
   font-family: 'Work Sans', sans-serif;
   color: rgba(0, 205, 120, .7);
 }
-.body4-row2 > div img {
+.body4-row2-row1 img, .body4-row2-row2 img {
   width:500px;
   text-align: center;
 }
@@ -499,7 +497,6 @@ background-color: rgba(0, 205, 120, .1);
   padding-top: 70px;
 }
 .body5-row4 > div:first-child {
-
   padding: 10px;
   font-size: 20px;
   font-family: 'Work Sans', sans-serif;
@@ -519,20 +516,35 @@ background-color: rgba(0, 205, 120, .1);
   transition: all .5s;
   cursor: default;
 }
+.body5-row4 >  div.contact-button > span {
+  opacity: 0;
+}
 
 .body5-row4 > div > div {
   position: fixed;
   top: 10vh;
   display: none;
+  opacity: 0;
+  transition-delay: 1s;
 }
 .body5-row4 > div.contact-button > div {
   display: block;
+  transition-delay: 1s;
+  animation: .2s contact-button-delay .5s forwards;
+}
+@keyframes contact-button-delay {
+  from {
+    opacity: 0;
+  } to {
+     opacity: 1;
+  }
 }
 .body5-row4 > div > div p {
   font-size: 40px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 800;
   color: #fff;
+  transition-delay: 1s;
 }
 .body5-row4-row1-row2 {
   display: flex;
@@ -635,9 +647,136 @@ transition: all .2s;
 .body5-row5.body5-row5-hide, .body5-row6.body5-row5-hide {
   display: none;
 }
+.body4-row2-row3-row1-row2 {
+  display: flex;
+  flex-flow: column wrap;
+}
+.body4-row2-row3-row1-row2 a {
+  text-decoration: none;
+}
+.body4-row2-row3-row1-row2 > div {
+  border: 5px solid #000;
+  box-sizing: border-box;
+  width: 90vw;
+  margin: 20px 0;
+  box-sizing: border-box;
+  padding: 40px;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-position 1s ease-out;
+}
+.special-heading1 {
+  color: #000;
+  font-size: 40px;
+  padding: 80px 0 30px 0;
+}
+.special-heading2 {
+  font-size: 30px;
+  padding: 20px 0 10px 0;
+}
+.special-heading3 {
+  font-size: 30px;
+  padding: 80px 0 30px 0;
+}
+.background-width > div {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.background-width > div button {
+  margin: 20px 0 0 0;
+  padding: 12px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0);
+  font-family: 'Work Sans', sans-serif;
+  border: 5px solid #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .5s all;
+}
+.background-width > div button:hover {
+   background-color: rgb(18,184,134);
+   border: 5px solid rgb(18,184,134);
+   color: #000;
+}
+.background-width-div1.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div2.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div3.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div4.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div5.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div6.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div7.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div8.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width-div9.background-div-anim {
+  animation: .5s background-anim .7s forwards;
+}
+.background-width.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width2.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width3.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width4.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width5.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width6.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width7.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width8.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.background-width9.background-width-shorten {
+  background-position: -1500px 0px;
+}
+.body4-row2-row3-row1-row2 h5 {
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+}
+.body4-row2-row3-row1-row2 p {
+  font-size: 30px;
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 20px;
+}
+@keyframes background-anim {
+  0% {
+   transform: translateY(-40%);
+   opacity: 0;
+  } 100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1300px) {
   .body2-row3 > div {
     margin-top: 40px;
+
   }
 }
 @media (max-width: 1100px) {
@@ -761,7 +900,7 @@ transition: all .2s;
     left: -440px;
     font-weight: 400;
   }
-  .navbar > div {
+.navbar > div {
     margin-top: 20px;
     font-size: 20px;
   }
