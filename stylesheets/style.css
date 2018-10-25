@@ -441,6 +441,7 @@ width: 100vw;
 }
 .body4-row2 > div h3 {
   font-family: 'Work Sans', sans-serif;
+  font-size: 25px;
 }
 .body4-row2 > div p {
   font-size: 20px;
@@ -668,19 +669,16 @@ transition: all .2s;
 }
 .special-heading1 {
   color: #000;
-  font-size: 40px;
   padding: 80px 0 30px 0;
 }
 .special-heading2 {
-  font-size: 30px;
   padding: 20px 0 10px 0;
 }
 .special-heading3 {
-  font-size: 30px;
   padding: 80px 0 30px 0;
 }
 .background-width > div {
-  transform: translateY(-100%);
+  transform: translateY(-20%);
   opacity: 0;
 }
 .background-width > div button {
@@ -765,7 +763,7 @@ transition: all .2s;
 }
 @keyframes background-anim {
   0% {
-   transform: translateY(-40%);
+   transform: translateY(-20%);
    opacity: 0;
   } 100% {
     transform: translateY(0%);
@@ -860,6 +858,24 @@ transition: all .2s;
 }
 }
 @media (max-width: 650px) {
+  .body4-row2-row3-row1-row2 > div {
+    border: 5px solid #000;
+    box-sizing: border-box;
+    width: 90vw;
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-position 1s ease-out;
+  }
+  .body4-row2 > h3:first-child {
+    font-size: 27px;
+  }
+  .body4-row2-row1-head2 {
+    font-size: 27px;
+  }
   .body5-row4-row1-row2 {
     margin-left: 30px;
   }
