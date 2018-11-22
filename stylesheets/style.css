@@ -797,7 +797,7 @@ transition: all .2s;
   transition-delay: 1s;
 }
 .body5-row1.contact-button-display, .body5-row3.contact-button-display {
-  display: none;
+  opacity: 0;
 }
 @media (max-width: 1300px) {
   .body2-row3 > div {
