@@ -148,6 +148,7 @@ $('.navbar > div').on('click', function () {
   $('.body5-row4 div').removeClass('contact-button');
   $('body').removeClass('stop-scrolling');
   $('.body5-row5, .body5-row6').removeClass('body5-row5-hide');
+  $('.body5-row1, .body5-row3').removeClass('contact-button-display');
 })
 $('.nav-home').on('click', function() {
   $('.navbar').toggleClass('navbar-slide');
@@ -179,6 +180,7 @@ $('.body5-row4 div').on('click', function(e) {
   $(this).addClass('contact-button');
   $('body').addClass('stop-scrolling');
   $('.body5-row5, .body5-row6').addClass('body5-row5-hide');
+  $('.body5-row1, .body5-row3').addClass('contact-button-display');
 })
 $(".body5-row4-row1-row2 > div input, .body5-row4-row1-row2 > div textarea").focusout(function(){
       var text_value = $(this).val();
